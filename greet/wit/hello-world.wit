@@ -1,0 +1,10 @@
+package component:greet;
+
+interface sayable {
+    say: func() -> string;
+}
+
+world hello-world{
+  import greetable;
+  export sayable;
+}

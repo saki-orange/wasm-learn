@@ -1,0 +1,13 @@
+[package]
+name = "hello-wasi-cli"
+version = "0.1.0"
+edition = "2024"
+
+[package.metadata.component]
+package = "component:hello-wasi-cli"
+
+[package.metadata.component.dependencies]
+
+[dependencies]
+ferris-says = "0.3.2"
+wit-bindgen-rt = { version = "0.41.0", features = ["bitflags"] }
